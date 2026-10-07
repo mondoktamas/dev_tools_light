@@ -1,0 +1,26 @@
+name: dev_tools_light
+description: >-
+  In-app memory-leak detection with LeakCanary-style leak traces, heap growth
+  trends and jank attribution to your own code, built on the Dart VM service.
+  Debug/profile; optional detect-only mode in release; a no-op on the web.
+version: 0.0.1
+
+environment:
+  sdk: ^3.9.0
+  flutter: ">=3.35.0"
+
+dependencies:
+  collection: ^1.19.0
+  flutter:
+    sdk: flutter
+  meta: ^1.16.0
+  protobuf: ^5.0.0
+  vm_service: ^15.0.0
+  vm_service_protos: ^2.0.1
+
+dev_dependencies:
+  fake_async: ^1.3.3
+  fixnum: ^1.1.0
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^10.3.0
