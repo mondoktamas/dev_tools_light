@@ -56,9 +56,12 @@ growing classes and slow operations with all the details (copyable as text).
 ## Usage
 
 ```yaml
-dev_dependencies:
+dependencies:
   dev_tools_light: ^0.1.0
 ```
+
+It is a normal dependency because `main.dart` imports it; release builds
+compile it down to nothing (see [Release builds](#release-builds)).
 
 ```dart
 import 'package:dev_tools_light/dev_tools_light.dart';
@@ -231,7 +234,7 @@ await DevToolsLight.start(
       frameBuildThreshold: Duration(milliseconds: 16),
       stallThreshold: Duration(milliseconds: 100),
       samplePeriodMicros: 250, // finer CPU sampling (VM default: 1000)
-      warmUp: Duration(seconds: 5), // ignore start-up frames
+      warmUp: Duration(seconds: 5), // ignore startup frames
       sampleFormat: SampleFormat.json, // if you need the JSON fetch
     ),
     overlay: const OverlayConfig(initialAlignment: Alignment.bottomLeft),

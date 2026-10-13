@@ -3,7 +3,15 @@ description: >-
   In-app memory-leak detection with LeakCanary-style leak traces, heap growth
   trends and jank attribution to your own code, built on the Dart VM service.
   Debug/profile; optional detect-only mode in release; a no-op on the web.
-version: 0.0.1
+version: 0.1.0
+repository: https://github.com/mondoktamas/dev_tools_light
+issue_tracker: https://github.com/mondoktamas/dev_tools_light/issues
+topics:
+  - memory
+  - leak-detection
+  - performance
+  - debugging
+  - devtools
 
 environment:
   sdk: ^3.9.0
