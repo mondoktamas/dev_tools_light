@@ -74,9 +74,8 @@ class _ReportsPanelState extends State<ReportsPanel>
               ),
     };
     if (page != null) {
-      unawaited(
-        navigator.push(MaterialPageRoute<void>(builder: (_) => page)),
-      );
+      // The route's result is not needed.
+      navigator.push(MaterialPageRoute<void>(builder: (_) => page)).ignore();
     }
   }
 

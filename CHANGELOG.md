@@ -1,3 +1,10 @@
+# 0.1.1
+
+* Shorter package description, within pub.dev's 180-character limit.
+* Removed the direct `protobuf` dependency; `vm_service_protos` brings the
+  version it needs.
+* Dropped an unnecessary `unawaited` in the report panel.
+
 # 0.1.0
 
 Initial release.
